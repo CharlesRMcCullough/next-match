@@ -1,24 +1,31 @@
 'use client';
 
+import { signInUser } from "@/app/actions/authActions";
 import { LoginSchema, loginSchema } from "@/lib/schemas/loginSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Card, CardHeader } from "@nextui-org/card";
 import { Button, CardBody, Input } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 import { useForm } from 'react-hook-form';
 import { GiPadlock } from "react-icons/gi";
 
 export default function LoginForm() {
+  const router = useRouter();
 
-  const {register, handleSubmit, formState: {errors, isValid}} = useForm<LoginSchema>({
+  const {register, handleSubmit, formState: {errors, isValid, isSubmitting}} = useForm<LoginSchema>({
     resolver: zodResolver(loginSchema),
     mode: 'onTouched'
   });
 
-  function onSubmit(data: LoginSchema)
-  {
-    console.log(data)
+  const onSubmit = async (data: LoginSchema) => {
+      const result = await signInUser(data);
+      if (result.status === 'success') {
+        router.push('/members');
+      } else {
+        console.log(result.error);
+      }
   }
-
+  
   return (
     <Card className="w-2/5 mx-auto">
       <CardHeader className="flex flex-col items-center justify-center">
@@ -49,7 +56,13 @@ export default function LoginForm() {
                 isInvalid={!!errors.password} 
                 errorMessage={errors.password?.message as string} />
 
-            <Button isDisabled={!isValid} fullWidth color='secondary' type='submit'>Login</Button>
+            <Button 
+                  isLoading={isSubmitting}
+                  isDisabled={!isValid} 
+                  fullWidth 
+                  color='secondary' 
+                  type='submit'>Login
+              </Button>
           </div>
         </form>
       </CardBody>
