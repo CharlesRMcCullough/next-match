@@ -19,7 +19,7 @@ export default function RegisterForm() {
   {
     const result = await registerUser(data);
 
-    if (result.status === 'sucess') {
+    if (result.status === 'success') {
       console.log('User registered successfully');
     } else {
       if (Array.isArray(result.error))
