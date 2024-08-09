@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6851ed24-0def-49e4-946e-b86131e9800a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/f1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/f2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/f3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/f4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/f5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/m1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/m2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/m3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/m4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/m5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/navbar/UserMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/prisma/memberData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/prisma/seeds.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.next-match.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.next-match.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/login/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/login/LoginForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/authActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/authActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/TopNav.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2kQPdCsE19gAS5k9bAWj1bT1oTP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,12 +40,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Section3",
+    "git-widget-placeholder": "Section4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "/home/charles/Source/Repos/next-match/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
     "rider.external.source.directories": [
       "/home/charles/.config/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
       "/home/charles/.config/JetBrains/Rider2024.1/resharper-host/SourcesCache",
@@ -61,14 +72,21 @@
       <option name="presentableId" value="Default" />
       <updated>1723212912179</updated>
       <workItem from="1723212913679" duration="123000" />
+      <workItem from="1723235208237" duration="1490000" />
+      <workItem from="1723236764655" duration="2747000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
