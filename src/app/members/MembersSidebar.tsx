@@ -1,3 +1,4 @@
+'use client';
 import { calculateAge } from "@/lib/util";
 import {
     Button,
@@ -45,16 +46,16 @@ export default function MembersSidebar({ member }: Props) {
                 </div>
                 <Divider className="my-3" />
                 <nav className="flex flex-col p-4 ml-4 text-2xl gap-4">
-                    {navLinks.map((link) => (
+                    {navLinks.map(link => (
                         <Link
                             href={link.href}
                             key={link.name}
                             className={`block rounded
                          ${pathName === link.href
-                                    ? `text-secondary`
-                                    : `hover:text-secondary/50`
-                                }`}
-                        ></Link>
+                                    ? 'text-secondary'
+                                    : 'hover:text-secondary/50' }`} >
+                            {link.name}
+                        </Link>
                     ))}
                 </nav>
             </CardBody>
