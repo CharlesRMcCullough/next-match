@@ -1,5 +1,4 @@
 import {Button} from "@nextui-org/react";
-import Link from "next/link";
 import {FaRegSmile} from "react-icons/fa";
 import {auth, signOut} from "@/auth";
 

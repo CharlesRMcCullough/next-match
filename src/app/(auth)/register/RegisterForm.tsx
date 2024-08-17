@@ -43,7 +43,7 @@ export default function RegisterForm() {
             <h1 className="text-3xl font-semibold">Register</h1>
           </div>
         </div>
-        <p className="text-neutral-500">Welecom to NextMatch</p>
+        <p className="text-neutral-500">Welcome to NextMatch</p>
       </CardHeader>
       <CardBody>
         <form onSubmit={handleSubmit(onSubmit)}>

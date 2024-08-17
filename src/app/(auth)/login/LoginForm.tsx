@@ -37,7 +37,7 @@ export default function LoginForm() {
             <h1 className="text-3xl font-semibold">Login</h1>
           </div>
         </div>
-        <p className="text-neutral-500">Welecom back to NextMatch</p>
+        <p className="text-neutral-500">Welcome back to NextMatch</p>
       </CardHeader>
       <CardBody>
         <form onSubmit={handleSubmit(onSubmit)}>

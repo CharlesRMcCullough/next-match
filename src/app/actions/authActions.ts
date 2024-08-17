@@ -22,7 +22,6 @@ export async function signInUser(data:LoginSchema): Promise<ActionResult<string>
     } catch (error) {
         console.log(error);
         if (error instanceof AuthError) {
-            console.log('***' + error.type)
             switch (error.type) {
                 case 'CredentialsSignin':
                 case 'CallbackRouteError':
